@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replies",
+  "info": {
+    "name": "Reply"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 3
+    },
+    "user": {
+      "via": "replies",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "tweet": {
+      "model": "tweet",
+      "via": "replies"
+    }
+  }
+}
