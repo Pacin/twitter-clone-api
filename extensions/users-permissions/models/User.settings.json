@@ -75,6 +75,20 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "bio": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "location": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "likes": {
+      "via": "user",
+      "collection": "like"
     }
   }
 }

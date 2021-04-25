@@ -24,6 +24,10 @@
     "replies": {
       "via": "tweet",
       "collection": "reply"
+    },
+    "likes": {
+      "via": "tweet",
+      "collection": "like"
     }
   }
 }
