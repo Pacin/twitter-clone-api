@@ -22,8 +22,8 @@
       "model": "user"
     },
     "tweet": {
-      "model": "tweet",
-      "via": "replies"
+      "via": "replies",
+      "model": "tweet"
     }
   }
 }

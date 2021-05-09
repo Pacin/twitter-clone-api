@@ -60,8 +60,8 @@
       "configurable": false
     },
     "tweets": {
-      "collection": "tweet",
-      "via": "user"
+      "via": "user",
+      "collection": "tweet"
     },
     "replies": {
       "collection": "reply",
@@ -89,6 +89,18 @@
     "likes": {
       "via": "user",
       "collection": "like"
+    },
+    "followers": {
+      "via": "user",
+      "collection": "follower"
+    },
+    "following": {
+      "via": "follower",
+      "collection": "follower"
+    },
+    "retweets": {
+      "via": "user",
+      "collection": "retweet"
     }
   }
 }

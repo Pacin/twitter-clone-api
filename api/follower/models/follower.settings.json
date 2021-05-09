@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "likes",
+  "collectionName": "followers",
   "info": {
-    "name": "Like",
-    "description": ""
+    "name": "Follower"
   },
   "options": {
     "increments": true,
@@ -11,14 +10,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "tweet": {
-      "via": "likes",
-      "model": "tweet"
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "likes"
+      "via": "followers"
+    },
+    "follower": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "following"
     }
   }
 }
